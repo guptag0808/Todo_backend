@@ -19,6 +19,7 @@ A simple Todo app with Node.js, Express, MongoDB, and Mongoose.
 - MVC (Model-View-Controller) structure
 - Express for backend
 - MongoDB for data storage
+- Implemented Rate Limiter
 
 
 ## Prerequisites
@@ -52,6 +53,9 @@ The following API routes are available:
  - GET /todo/:id - Get details of a specific todo.
  - PUT /todo/:id - Update the details of a specific todo.
  - DELETE /todo/:id - Delete a specific todo.
+
+ ###
+ - Every get routes will execute only 5 times in a minutes
 
  ### `POST /signup`
 
